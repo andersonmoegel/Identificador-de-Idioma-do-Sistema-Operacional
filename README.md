@@ -1,0 +1,1 @@
+# Identificador-de-Idioma-do-Sistema-Operacional
