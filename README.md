@@ -1,45 +1,45 @@
-# Identificador do Sistema Operacional e seu Idioma
+# Operating System and Language Identifier
 
-Este código é uma ferramenta desenvolvida para uso empresarial em plataformas que executam scripts. Ele captura informações sobre o sistema operacional, incluindo a versão do Windows e o idioma do sistema, e registra essas informações em um arquivo de log.
+This script is a tool developed for enterprise use on platforms that execute scripts. It captures information about the operating system, including the Windows version and system language, and logs these details to a file.
 
-## Funcionalidades
+## Features
 
-- **Remoção de Caracteres Especiais**: O código normaliza o idioma do sistema para remover caracteres especiais, garantindo que os dados sejam salvos de forma limpa.
-- **Registro de Informações**: Salva a versão do Windows e o idioma do sistema em um arquivo de texto no diretório `C:\Windows\Temp\Idioma.txt`.
-- **Tratamento de Erros**: Inclui tratamento de exceções para lidar com possíveis erros ao salvar o arquivo.
+- **Special Character Removal**: The script normalizes the system language string to remove special characters, ensuring clean data logging.
+- **Information Logging**: Saves the Windows version and system language to a text file in the directory `C:\Windows\Temp\Idioma.txt`.
+- **Error Handling**: Includes exception handling to deal with potential errors during file saving.
 
-## Uso
+## Usage
 
-Para utilizar o código, basta executá-lo em um ambiente Python. As informações serão automaticamente salvas no caminho especificado.
+To use the script, simply run it in a Python environment. The information will be automatically saved to the specified path.
 
-### Reativando a funcionalidade de mostrar o nome do sistema operacional
+### Reactivating the OS Name Display Feature
 
-A funcionalidade que exibe o nome do sistema operacional está disponível, mas foi ocultada para atender a requisitos específicos. Para reativá-la, você pode descomentar a linha correspondente no código:
+The feature that displays the operating system name is available but was hidden to meet specific requirements. To reactivate it, you can uncomment the corresponding line in the code:
 
 ```python
-# Adicione esta linha para mostrar o nome do sistema operacional
-# print(f"Nome do Sistema Operacional: {platform.system()}")
+# Add this line to display the operating system name
+# print(f"Operating System Name: {platform.system()}")
 ```
 
-## Requisitos
+## Requirements
 
-- Python 3.x
-- Bibliotecas padrão: `locale`, `os`, `platform`, `unicodedata`
+- Python 3.x  
+- Standard libraries: `locale`, `os`, `platform`, `unicodedata`
 
-## Execução
+## Execution
 
-1. Certifique-se de que o Python esteja instalado em sua máquina.
-2. Copie o código para um arquivo Python (por exemplo, `salvar_idioma.py`).
-3. Execute o script usando o terminal ou prompt de comando:
+1. Ensure Python is installed on your machine.
+2. Copy the code into a Python file (e.g., `save_language.py`).
+3. Run the script using the terminal or command prompt:
 
    ```bash
    python idioma.py
    ```
 
-## Contribuições
+## Contributions
 
-Contribuições são bem-vindas! Sinta-se à vontade para enviar pull requests ou relatar problemas.
+Contributions are welcome! Feel free to submit pull requests or report issues.
 
-## Licença
+## License
 
-Este projeto é de uso livre e não possui restrições de licença.
+This project is free to use and has no license restrictions.
